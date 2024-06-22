@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet7.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Contact Us</h1>
+        <form id="form">
+            <div class="first">
+                <label for="first"> First Name</label>
+                <input type="text" name="first" id="first_name">
+                <p id="error" class="firstError hidden">This field is required</p>
+            </div>
+            <div class="last">
+                <label for="last"> Last Name</label>
+                <input type="text" name="last" id="last_name">
+                <p id="error" class="lastError hidden">This field is required</p>
+            </div>
+            <div class="email">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email">
+                <p id="email_error" class="emailError hidden">Please enter a valid email address</p>
+            </div>
+            <div class="query">
+                <label for="query">Query Type</label>
+                <div class="all">
+                <div class="querys">
+                    <input type="radio" name="general" class="general" id="general" >
+                    <p>General Enquiry</p>
+                </div>
+                <div class="querys">
+                    <input type="radio" name="general" class="general" id="general1" >
+                    <p>Support Request</p>
+                </div></div>
+                <p id="error" class="queryError hidden">Please select a query type</p>
+            </div>
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <p id="error" class="messageError hidden">This field is required</p>
+            </div>
+            <div class="contact">
+                <div class="cont">
+                <input type="checkbox" name="contact" id="contact">
+                <label for="contact"> I consent to being contacted by the team</label>
+            </div>
+                <p id="error" class="contactError hidden">To submit this form, please consent to being contacted</p>
+            </div>
+            <input type="submit" value="Submit" id="btn">
+        </form>
+        <header class="header hidden">
+            <div class="send">
+                <img src="icon-success-check.svg" alt="">
+                <p> Message Sent!</p>
+            </div>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </header>
+    </section>
+
+    <script src="projet7.js"></script>
+</body>
+</html>
